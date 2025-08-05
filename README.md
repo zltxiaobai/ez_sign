@@ -24,7 +24,7 @@ pip install requests schedule pytz apscheduler loguru
 ### 1. 验证码识别 API 申请
 访问 云码平台 注册账号并获取 API Token。 
 
-申请地址：https://console.jfbym.com/register/TG97164
+申请地址：https://console.jfbym.com/register/TG114268
 
 ### 2. 配置文件设置
 编辑 config/config.ini 文件，填入相应的配置信息：
@@ -45,7 +45,7 @@ username = M-SEC网站用户名 # 账户地址：https://msec.nsfocus.com/
 password = M-SEC网站密码
 
 [jfbym] (必须)
-Token = 云码平台API Token #  申请地址：https://console.jfbym.com/register/TG97164
+Token = 云码平台API Token #  申请地址：https://console.jfbym.com/register/TG114268
 ```
 ### 配置项说明 钉钉配置
 - dingding_secret : 钉钉机器人的加签密钥
@@ -54,8 +54,9 @@ Token = 云码平台API Token #  申请地址：https://console.jfbym.com/reg
 - email_sender : 发件人邮箱（建议使用163邮箱）
 - email_pass : 邮箱授权码（需要在邮箱设置中开启SMTP服务并获取授权码）
 - receiver_email : 接收通知的邮箱地址 网站登录配置
-- username : M-SEC 网站的登录用户名
-- password : M-SEC 网站的登录密码 验证码识别配置
+- usernames : M-SEC 网站的登录用户名
+- passwords: M-SEC 网站的登录密码 验证码识别配置
+- 多账号usernames和passwords用英文逗号分隔
 - Token : 在云码平台申请的 API Token
 ## 项目结构
 ```
